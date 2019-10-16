@@ -1,0 +1,29 @@
+#---------------------------------#
+#      general configuration      #
+#---------------------------------#
+
+# version format
+version: 1.0.{build}
+
+pull_requests:
+  do_not_increment_build_number: true
+
+# branches to build
+branches:
+  # whitelist
+  only:
+    - master
+    
+#---------------------------------#
+#    environment configuration    #
+#---------------------------------#
+
+# Build + test + package +publish
+image: Visual Studio 2017
+
+before_build:
+  - cmd: nuget restore
+
+build:
+  project: HopfieldNetwork-DotNetCore.sln
+  verbosity: detailed    
