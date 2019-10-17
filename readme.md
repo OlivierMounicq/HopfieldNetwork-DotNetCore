@@ -1,5 +1,7 @@
 ### Hopfield Network
 
+[![Build status](https://ci.appveyor.com/api/projects/status/aalmr0yn7mpy2vhf?svg=true)](https://ci.appveyor.com/project/OlivierMounicq/HopfieldNetwork-DotNetCore)
+
 1/  Create a new folder by using the explorer  
 2/  Launch Visual Studio Code  
 3/  Open the folder HopfieldNetwork-DotnetCore  
