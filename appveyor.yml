@@ -19,7 +19,7 @@ branches:
 #---------------------------------#
 
 # Build + test + package +publish
-image: Visual Studio 2017
+image: Previous Visual Studio 2019
 
 before_build:
   - cmd: nuget restore
