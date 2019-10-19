@@ -22,6 +22,7 @@ branches:
 image: Previous Visual Studio 2019
 
 before_build:
+  - choco install opencover.portable
   - cmd: nuget restore
 
 build:
