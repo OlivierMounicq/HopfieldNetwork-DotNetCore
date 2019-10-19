@@ -31,5 +31,5 @@ build:
 #---------------------------------#
 #       tests configuration       #
 #---------------------------------#    
-test:     
+before_test:     
   - cmd: dotnet test
