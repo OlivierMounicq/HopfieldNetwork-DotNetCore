@@ -35,4 +35,4 @@ before_test:
   - cmd: C:\"Program Files"\dotnet\dotnet.exe test "C:\projects\hopfieldnetwork-dotnetcore\HopfieldNetworkTesting\HopfieldNetworkTesting.csproj"
 
 after_test:
-  - cmd: packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -filter:"+[*]*" -target:"C:\Program Files\dotnet\dotnet.exe" -targetargs:"test --logger:trx;LogFileName=results.trx /p:DebugType=full C:\projects\hopfieldnetwork-dotnetcore\HopfieldNetworkTesting\HopfieldNetworkTesting.csproj" -output:coverage.xml
+  - cmd: packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -filter:"+[*]*" -target:"C:\'Program Files'\dotnet\dotnet.exe" -targetargs:"test --logger:trx;LogFileName=results.trx /p:DebugType=full C:\projects\hopfieldnetwork-dotnetcore\HopfieldNetworkTesting\HopfieldNetworkTesting.csproj" -output:coverage.xml
