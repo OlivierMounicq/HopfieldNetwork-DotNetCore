@@ -32,4 +32,4 @@ build:
 #       tests configuration       #
 #---------------------------------#    
 test:     
-  - cmd : dotnet test
+  - cmd: dotnet test
