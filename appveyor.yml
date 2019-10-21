@@ -33,6 +33,10 @@ build:
 #       tests configuration       #
 #---------------------------------#    
 before_test:
+  - cmd: cd HopfieldNetworkTesting
+  - cmd: nuget install Appveyor.TestLogger -Version 2.0.0
+  - cmd: cd ..
+  - cmd: dotnet test --no-build --no-restore --test-adapter-path:. --logger:Appveyor Test
   - cmd: C:\"Program Files"\dotnet\dotnet.exe test "C:\projects\hopfieldnetwork-dotnetcore\HopfieldNetworkTesting\HopfieldNetworkTesting.csproj"
 
 after_test:
