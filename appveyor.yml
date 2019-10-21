@@ -37,7 +37,7 @@ before_test:
   - cmd: nuget install Appveyor.TestLogger -Version 2.0.0
   - cmd: cd ..
   - cmd: cd
-  - cmd: C:\"Program Files"\dotnet\dotnet.exe test "C:\projects\hopfieldnetwork-dotnetcore\HopfieldNetworkTesting\HopfieldNetworkTesting.csproj"  --logger:Appveyor
+  - cmd: C:\"Program Files"\dotnet\dotnet.exe test "C:\projects\hopfieldnetwork-dotnetcore\HopfieldNetworkTesting\HopfieldNetworkTesting.csproj"  --logger:Appveyor.TestLogger
 
 after_test:
   - cmd: OpenCover.Console.exe -register:user -filter:"+[*]*" -target:"dotnet.exe" -targetargs:"test --logger:trx;LogFileName=results.trx /p:DebugType=full C:\projects\hopfieldnetwork-dotnetcore\HopfieldNetworkTesting\HopfieldNetworkTesting.csproj" -output:coverage.xml
