@@ -29,6 +29,10 @@ build:
   project: HopfieldNetwork-DotNetCore.sln
   verbosity: detailed    
 
+environment:
+  COVERALLS_REPO_TOKEN:
+    secure: oquati3lPE6WsV2z6oClGkMqGoQ+O5v9b/kmlFh6kZjfw8tWufUyEOC6f3apx/9Z
+
 #---------------------------------#
 #       tests configuration       #
 #---------------------------------#    
@@ -41,3 +45,4 @@ before_test:
 
 after_test:
   - cmd: OpenCover.Console.exe -register:user -filter:"+[*]*" -target:"dotnet.exe" -targetargs:"test --logger:trx;LogFileName=results.trx /p:DebugType=full C:\projects\hopfieldnetwork-dotnetcore\HopfieldNetworkTesting\HopfieldNetworkTesting.csproj" -output:coverage.xml
+  - cmd: packages\coveralls.io.1.4.2\tools\coveralls.net.exe --opencover coverage.xml -r %COVERALLS_REPO_TOKEN%
