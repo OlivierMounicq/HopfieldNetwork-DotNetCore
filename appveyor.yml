@@ -42,6 +42,7 @@ before_test:
   - cmd: cd ..
   - cmd: nuget install coveralls.io -Version 1.4.2
   - cmd: cd
+  - cmd: dir/b/s
   - cmd: C:\"Program Files"\dotnet\dotnet.exe test "C:\projects\hopfieldnetwork-dotnetcore\HopfieldNetworkTesting\HopfieldNetworkTesting.csproj" --test-adapter-path:. --logger:Appveyor
 
 after_test:
