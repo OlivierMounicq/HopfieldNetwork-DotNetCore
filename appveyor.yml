@@ -40,6 +40,7 @@ before_test:
   - cmd: cd HopfieldNetworkTesting
   - cmd: nuget install Appveyor.TestLogger -Version 2.0.0
   - cmd: cd ..
+  - cmd: nuget install coveralls.io -Version 1.4.2
   - cmd: cd
   - cmd: C:\"Program Files"\dotnet\dotnet.exe test "C:\projects\hopfieldnetwork-dotnetcore\HopfieldNetworkTesting\HopfieldNetworkTesting.csproj" --test-adapter-path:. --logger:Appveyor
 
