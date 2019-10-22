@@ -1,7 +1,8 @@
 ### Hopfield Network
 
 [![Build status](https://ci.appveyor.com/api/projects/status/ffq8cv5lwpon71ul?svg=true)](https://ci.appveyor.com/project/OlivierMounicq/HopfieldNetwork-DotNetCore) 
-[![Tests Status](https://img.shields.io/appveyor/tests/OlivierMounicq/HopfieldNetwork-DotNetCore.svg?logo=appveyor)](https://ci.appveyor.com/project/OlivierMounicq/HopfieldNetwork-DotNetCore/build/tests)
+[![Tests Status](https://img.shields.io/appveyor/tests/OlivierMounicq/HopfieldNetwork-DotNetCore.svg?logo=appveyor)](https://ci.appveyor.com/project/OlivierMounicq/HopfieldNetwork-DotNetCore/build/tests) 
+[![Coverage Status](https://coveralls.io/repos/github/OlivierMounicq/HopfieldNetwork-DotNetCore/badge.svg?branch=master)](https://coveralls.io/github/OlivierMounicq/HopfieldNetwork-DotNetCore?branch=master)
 
 1/  Create a new folder by using the explorer  
 2/  Launch Visual Studio Code  
