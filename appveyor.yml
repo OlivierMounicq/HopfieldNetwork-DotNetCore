@@ -31,7 +31,7 @@ build:
 
 environment:
   COVERALLS_REPO_TOKEN:
-    secure: oquati3lPE6WsV2z6oClGkMqGoQ+O5v9b/kmlFh6kZjfw8tWufUyEOC6f3apx/9Z
+    secure: kCHwahaiyRsm02S6bh1L6p+eXceervC0Lz+jfivWjle2coZ9+wIwLtoIf4acMDWm
 
 #---------------------------------#
 #       tests configuration       #
