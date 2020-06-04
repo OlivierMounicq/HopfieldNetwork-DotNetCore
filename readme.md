@@ -21,9 +21,10 @@
 13/ dotnet build  
 14/ dotnet test    
 15/ git init  
-16/ git commit -a -m "1st commit"  
-17/ go github and create a new repository without readme   
-18/ git remote add origin https://github.com/OlivierMounicq/HopfieldNetwork-DotNetCore.git  
-19/ update the sln file by adding a project  		
-20/ git commit -a -m "Add the testing project to the solution file"  
-21/ git push origin master  
+16/ git add -all
+17/ git commit -a -m "1st commit"  
+18/ go github and create a new repository without readme   
+19/ git remote add origin https://github.com/OlivierMounicq/HopfieldNetwork-DotNetCore.git  
+20/ update the sln file by adding a project  		
+21/ git commit -a -m "Add the testing project to the solution file"  
+22/ git push origin master  
