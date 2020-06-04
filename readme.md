@@ -21,7 +21,7 @@
 13/ dotnet build  
 14/ dotnet test    
 15/ git init  
-16/ git add -all
+16/ git add -all  
 17/ git commit -a -m "1st commit"  
 18/ go github and create a new repository without readme   
 19/ git remote add origin https://github.com/OlivierMounicq/HopfieldNetwork-DotNetCore.git  
